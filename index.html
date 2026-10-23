@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TAGI Consulting｜製造業・専門商社のBPR・AIエージェント業務改革コンサルティング</title>
+  <meta name="description" content="製造業・専門商社の業務改革を支援するコンサルティング。BPR・業務改善、AIエージェントによるEnd-to-End業務効率化、ERP・IT導入に伴う業務・運用改革、PMO・PGMOによるプロジェクト推進まで、構想から実行・定着まで伴走します。">
+  <meta name="theme-color" content="#132C4C">
+  <link rel="canonical" href="https://www.tagi-consulting.jp/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="TAGI Consulting">
+  <meta property="og:title" content="TAGI Consulting｜BPR・AIエージェント業務改革コンサルティング">
+  <meta property="og:description" content="業務のつながりを設計し直し、AIエージェントで回し続ける。製造業・専門商社の業務改革を、構想から定着まで支援します。">
+  <meta property="og:url" content="https://www.tagi-consulting.jp/">
+  <meta property="og:image" content="https://www.tagi-consulting.jp/assets/img/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="TAGI Consulting のロゴとキャッチコピー「業務のつながりを設計し直し、AIエージェントで回し続ける。」">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "TAGI Consulting",
+    "url": "https://www.tagi-consulting.jp/",
+    "logo": "https://www.tagi-consulting.jp/assets/img/logo.svg",
+    "image": "https://www.tagi-consulting.jp/assets/img/ogp.png",
+    "email": "a.kato0001@tagi-consulting.jp",
+    "description": "製造業・専門商社を中心とした、BPR・業務改善、AIエージェントによるEnd-to-End業務効率化、ERP・IT導入に伴う業務・運用改革、業務改革・プロジェクト推進支援のコンサルティング。",
+    "priceRange": "個別見積もり",
+    "knowsAbout": ["BPR", "業務改善", "AIエージェント", "生成AI活用", "ERP導入", "業務運用設計", "PMO", "PGMO"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "提供サービス",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "BPR・業務改善コンサルティング"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AIエージェントによるEnd-to-End業務効率化"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "ERP・IT導入に伴う業務・運用改革"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "業務改革・プロジェクト推進支援"}}
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "費用はどのくらいかかりますか。", "acceptedAnswer": {"@type": "Answer", "text": "個別見積もりです。ご相談内容、支援範囲、期間をお伺いしたうえで、お見積もりをご提示します。"}},
+      {"@type": "Question", "name": "課題がまだ整理できていない段階でも相談できますか。", "acceptedAnswer": {"@type": "Answer", "text": "はい、ご相談いただけます。現在の業務の進め方や、お困りの点をお聞きするところから一緒に整理します。"}},
+      {"@type": "Question", "name": "AIエージェントの活用には、どのような環境が必要ですか。", "acceptedAnswer": {"@type": "Answer", "text": "特定のツールを前提とせず、現在お使いのシステム、データの状態、セキュリティ方針を確認したうえで、実現可能な範囲と進め方を検討します。"}},
+      {"@type": "Question", "name": "AIに業務を任せて、品質や情報管理は大丈夫ですか。", "acceptedAnswer": {"@type": "Answer", "text": "AIの出力をそのまま使うのではなく、人が確認・承認する工程や、例外時の対応ルールを業務に組み込んで設計します。扱うデータの範囲やアクセス権限も、貴社の方針に沿って検討します。"}},
+      {"@type": "Question", "name": "どのような業種・業務に対応していますか。", "acceptedAnswer": {"@type": "Answer", "text": "製造業・専門商社を中心に、受発注、購買、在庫、出荷、請求などの業務や、それらに関わるシステム導入・運用の見直しを主な対象としています。"}},
+      {"@type": "Question", "name": "個人のコンサルタントに依頼する場合、どのような体制になりますか。", "acceptedAnswer": {"@type": "Answer", "text": "TAGI Consultingは個人で運営しており、代表が直接ご支援を担当します。支援範囲や進め方は、ご相談内容に合わせて事前にすり合わせます。"}},
+      {"@type": "Question", "name": "相談内容の秘密は守られますか。", "acceptedAnswer": {"@type": "Answer", "text": "ご相談内容を第三者に開示することはありません。必要に応じて、秘密保持契約を締結したうえで詳細をお伺いします。"}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <svg class="u-svg-defs" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="grad-logo-a" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" class="logo-a-stop-start"/>
+        <stop offset="1" class="logo-a-stop-end"/>
+      </linearGradient>
+      <symbol id="logo-mark" viewBox="0 0 290 92">
+        <path d="M0 0h64v12H0zM25 0h14v92H25z" fill="currentColor"/>
+        <path d="M104 0h13L85 92H72z" fill="url(#grad-logo-a)"/>
+        <path d="M104 0h13l33 92h-14z" fill="currentColor"/>
+        <path d="M228 18.5A39 39 0 1 0 239 52v-5h-27" fill="none" stroke="currentColor" stroke-width="12"/>
+        <path d="M272 0h13v92h-13z" fill="currentColor"/>
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+      <symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M5 20c.8-3.8 3.6-5.8 7-5.8s6.2 2 7 5.8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="i-agent" viewBox="0 0 24 24"><rect x="4.5" y="7" width="15" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 3.5V7M9.5 12h.01M14.5 12h.01M9.5 15h5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M2.5 11v3M21.5 11v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="u-skip-link" href="#main">本文へスキップ</a>
+
+  <header class="l-header" id="site-header">
+    <div class="l-header__inner">
+      <a class="c-logo" href="#top" aria-label="TAGI Consulting トップへ">
+        <svg class="c-logo__mark" aria-hidden="true" focusable="false"><use href="#logo-mark"/></svg>
+        <span class="c-logo__sub" lang="en">Consulting</span>
+      </a>
+      <button class="l-header__toggle" type="button" aria-expanded="false" aria-controls="global-nav">
+        <span class="l-header__toggle-bar" aria-hidden="true"></span>
+        <span class="u-visually-hidden">メニューを開く</span>
+      </button>
+      <nav class="l-nav" id="global-nav" aria-label="サイト内メニュー">
+        <ul class="l-nav__list">
+          <li><a href="#issues">業務課題</a></li>
+          <li><a href="#services">サービス</a></li>
+          <li><a href="#ai">AI活用</a></li>
+          <li><a href="#strengths">強み</a></li>
+          <li><a href="#process">進め方</a></li>
+          <li><a href="#profile">プロフィール</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a class="c-button c-button--primary c-button--small l-nav__cta" href="#contact">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="p-hero" id="top" aria-labelledby="hero-title">
+      <div class="l-container l-container--wide p-hero__inner">
+        <div class="p-hero__body">
+          <p class="c-eyebrow" lang="en">BPR × AI AGENT CONSULTING</p>
+          <h1 class="p-hero__title" id="hero-title">業務のつながりを<br class="u-sp">設計し直し、<br>AIエージェントで<br class="u-sp">回し続ける。</h1>
+          <p class="p-hero__lead">製造業・専門商社の受発注から請求まで。<br class="u-pc">業務全体を見渡し、仕組みから変える<br class="u-pc">業務改革コンサルティングです。</p>
+          <div class="p-hero__actions">
+            <a class="c-button c-button--primary" href="#contact">相談してみる<svg class="c-button__icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="c-button c-button--secondary" href="#services">サービスを見る</a>
+          </div>
+          <p class="p-hero__meta">代表 a.kato<span aria-hidden="true">｜</span>コンサルティング経験6年<span aria-hidden="true">｜</span>PMP</p>
+        </div>
+        <div class="p-hero__visual" aria-hidden="true">
+          <svg class="p-hero__motif" viewBox="0 0 480 520" preserveAspectRatio="xMidYMid meet">
+            <g class="p-hero__flow">
+              <rect x="40" y="96" width="92" height="40" rx="4"/>
+              <rect x="40" y="176" width="92" height="40" rx="4"/>
+              <rect x="40" y="256" width="92" height="40" rx="4"/>
+              <rect x="40" y="336" width="92" height="40" rx="4"/>
+              <path d="M86 136v40M86 216v40M86 296v40"/>
+              <text x="86" y="121">受注</text>
+              <text x="86" y="201">照合</text>
+              <text x="86" y="281">承認</text>
+              <text x="86" y="361">請求</text>
+            </g>
+            <line class="p-hero__line" x1="150" y1="520" x2="480" y2="120"/>
+            <polygon class="p-hero__band" points="380,190 432,190 300,350 248,350"/>
+            <line class="p-hero__line p-hero__line--light" x1="248" y1="520" x2="450" y2="275"/>
+          </svg>
+        </div>
+      </div>
+      <div class="p-hero__band-strip">
+        <ul class="l-container l-container--wide p-hero__areas" aria-label="対応領域">
+          <li>BPR・業務改善</li>
+          <li>AIエージェント</li>
+          <li>ERP・IT導入</li>
+          <li>PMO・PGMO</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="l-section p-issues u-bg-mist" id="issues" aria-labelledby="issues-title">
+      <div class="l-container l-container--wide">
+        <header class="c-section-heading">
+          <p class="c-eyebrow" lang="en">ISSUES</p>
+          <h2 class="c-section-heading__title" id="issues-title">こんな業務課題を、<br class="u-sp">抱えていませんか。</h2>
+        </header>
+        <ul class="p-issues__list">
+          <li class="c-card p-issues__card"><span class="c-number">01</span><p>受発注や在庫の状況が、特定の担当者にしか分からない</p></li>
+          <li class="c-card p-issues__card"><span class="c-number">02</span><p>Excel・紙・FAXが残り、同じ情報を何度も転記している</p></li>
+          <li class="c-card p-issues__card"><span class="c-number">03</span><p>システムを導入したが、現場の運用が追いつかず効果が見えない</p></li>
+          <li class="c-card p-issues__card"><span class="c-number">04</span><p>システム刷新の提案が、自社にとって妥当か判断しきれない</p></li>
+          <li class="c-card p-issues__card"><span class="c-number">05</span><p>AIを活用したいが、どの業務から手をつけるべきか分からない</p></li>
+          <li class="c-card p-issues__card"><span class="c-number">06</span><p>改革を進めたいが、部門をまたいで推進できる人がいない</p></li>
+        </ul>
+        <p class="p-issues__bridge">これらは個別の作業の問題ではなく、<br class="u-sp"><strong>業務のつながり</strong>の問題です。</p>
+      </div>
+    </section>
+
+    <section class="l-section p-services" id="services" aria-labelledby="services-title">
+      <div class="l-container l-container--wide">
+        <header class="c-section-heading">
+          <p class="c-eyebrow" lang="en">SERVICES</p>
+          <h2 class="c-section-heading__title" id="services-title">提供サービス</h2>
+          <p class="c-section-heading__lead">業務を見直し、仕組みに載せ、AIエージェントで回す。<br class="u-pc">その一連の取り組みを、プロジェクト推進の面からも支えます。</p>
+        </header>
+
+        <div class="p-services__grid">
+          <article class="c-card p-services__card">
+            <p class="c-number">01</p>
+            <h3 class="p-services__name">BPR・業務改善コンサルティング</h3>
+            <p class="p-services__en" lang="en">Business Process Re-engineering</p>
+            <p class="p-services__desc">現状の業務を可視化して課題を分析し、業務プロセスの標準化・再設計から、改善施策の策定・実行までを支援します。</p>
+            <ul class="c-check-list">
+              <li>業務の可視化・課題分析</li>
+              <li>業務プロセスの標準化・再設計</li>
+              <li>改善施策の策定・実行支援</li>
+            </ul>
+          </article>
+
+          <article class="c-card p-services__card p-services__card--featured">
+            <p class="c-badge c-badge--focus">TAGIの重点領域</p>
+            <p class="c-number">02</p>
+            <h3 class="p-services__name">AIエージェントによる<br>End-to-End業務効率化</h3>
+            <p class="p-services__en" lang="en">AI Agent End-to-End Automation</p>
+            <p class="p-services__desc">一つの作業の自動化ではなく、情報取得から後続処理まで、複数の工程を横断して業務プロセス全体を最適化します。構想・設計から実装まで支援します。</p>
+            <ul class="c-check-list">
+              <li>情報取得・内容理解・データ照合・資料作成・承認・後続処理の一貫設計</li>
+              <li>出力品質・人による承認・例外処理の設計</li>
+              <li>セキュリティと既存システム連携の検討</li>
+            </ul>
+            <a class="c-text-link" href="#ai">ご支援イメージを見る<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+
+          <article class="c-card p-services__card">
+            <p class="c-number">03</p>
+            <h3 class="p-services__name">ERP・IT導入に伴う<br>業務・運用改革</h3>
+            <p class="p-services__en" lang="en">ERP &amp; IT Transformation</p>
+            <p class="p-services__desc">システムを入れて終わりにしないために。導入に合わせた業務設計から、移行、運用体制づくり、現場への定着までを支援します。</p>
+            <ul class="c-check-list">
+              <li>システム導入に伴う業務設計・業務移行</li>
+              <li>役割分担の整理・保守運用体制の構築</li>
+              <li>業務定着の支援</li>
+            </ul>
+          </article>
+
+          <article class="c-card p-services__card">
+            <p class="c-number">04</p>
+            <h3 class="p-services__name">業務改革・プロジェクト推進支援</h3>
+            <p class="p-services__en" lang="en">PMO / PGMO</p>
+            <p class="p-services__desc">複数部門・複数プロジェクトにまたがる改革を、計画・進捗・課題・リスクの管理と部門間調整で前に進め、経営の意思決定を支えます。</p>
+            <ul class="c-check-list">
+              <li>PMO・PGMO、進捗・課題・リスク管理</li>
+              <li>部門間の調整</li>
+              <li>業務管理プロセスの改善・意思決定支援</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="l-section p-ai" id="ai" aria-labelledby="ai-title">
+      <div class="p-ai__motif" aria-hidden="true"></div>
+      <div class="l-container l-container--wide">
+        <header class="c-section-heading c-section-heading--inverse">
+          <p class="c-eyebrow" lang="en">AI AGENT × END-TO-END</p>
+          <h2 class="c-section-heading__title" id="ai-title">AIエージェントが、<br class="u-sp">業務をつなぐ。</h2>
+          <p class="c-section-heading__lead">作業ごとに自動化するのではなく、一連の業務の流れをAIエージェントが引き継ぎながら処理します。人は、判断と例外への対応に集中できます。</p>
+        </header>
+
+        <div class="p-ai__compare">
+          <div class="p-ai__compare-item">
+            <p class="p-ai__compare-label">一作業の自動化</p>
+            <p>転記や集計など、個々の作業は速くなる。ただし工程と工程の間は人がつなぎ続け、確認や待ち時間は残る。</p>
+          </div>
+          <div class="p-ai__compare-item p-ai__compare-item--accent">
+            <p class="p-ai__compare-label">End-to-Endの業務効率化</p>
+            <p>情報の受け取りから後続処理までを一つの流れとして設計する。人が関わるのは、承認と例外の判断に絞り込む。</p>
+          </div>
+        </div>
+
+        <figure class="p-ai__flow">
+          <figcaption class="p-ai__flow-caption">
+            <span class="c-badge c-badge--sample">ご支援イメージ（架空の例）</span>
+            <span class="p-ai__flow-title">注文書を受け取ってから、受注登録・出荷指示まで</span>
+          </figcaption>
+          <ol class="p-ai__steps">
+            <li class="p-ai__step">
+              <span class="p-ai__step-actor"><svg aria-hidden="true"><use href="#i-agent"/></svg>AI</span>
+              <span class="p-ai__step-no">STEP 1</span>
+              <h3 class="p-ai__step-name">情報取得</h3>
+              <p>メール・FAX・PDFで届いた注文書を受け取り、内容を取り込む</p>
+            </li>
+            <li class="p-ai__step">
+              <span class="p-ai__step-actor"><svg aria-hidden="true"><use href="#i-agent"/></svg>AI</span>
+              <span class="p-ai__step-no">STEP 2</span>
+              <h3 class="p-ai__step-name">内容理解</h3>
+              <p>品番・数量・納期・取引条件を読み取り、項目ごとに整理する</p>
+            </li>
+            <li class="p-ai__step">
+              <span class="p-ai__step-actor"><svg aria-hidden="true"><use href="#i-agent"/></svg>AI</span>
+              <span class="p-ai__step-no">STEP 3</span>
+              <h3 class="p-ai__step-name">データ照合</h3>
+              <p>在庫・単価・取引条件を既存システムのデータと照合し、差異を検出する</p>
+            </li>
+            <li class="p-ai__step">
+              <span class="p-ai__step-actor"><svg aria-hidden="true"><use href="#i-agent"/></svg>AI</span>
+              <span class="p-ai__step-no">STEP 4</span>
+              <h3 class="p-ai__step-name">資料作成</h3>
+              <p>受注登録データと、顧客への回答文書の案を作成する</p>
+            </li>
+            <li class="p-ai__step p-ai__step--human">
+              <span class="p-ai__step-actor"><svg aria-hidden="true"><use href="#i-person"/></svg>人</span>
+              <span class="p-ai__step-no">STEP 5</span>
+              <h3 class="p-ai__step-name">承認</h3>
+              <p>担当者が内容と根拠を確認し、承認する</p>
+            </li>
+            <li class="p-ai__step">
+              <span class="p-ai__step-actor"><svg aria-hidden="true"><use href="#i-agent"/></svg>AI</span>
+              <span class="p-ai__step-no">STEP 6</span>
+              <h3 class="p-ai__step-name">後続処理</h3>
+              <p>受注登録・出荷指示・回答メールの送信までを実行する</p>
+            </li>
+          </ol>
+          <div class="p-ai__exception">
+            <span class="p-ai__exception-label"><svg aria-hidden="true"><use href="#i-person"/></svg>例外対応</span>
+            <p>照合で差異が見つかったもの、判断に迷うものは、理由を添えて担当者に通知。人が判断したうえで流れに戻します。</p>
+          </div>
+          <p class="p-ai__note">※上図は、ご支援の考え方を説明するために作成した架空の例であり、実際の導入実績ではありません。対象業務や仕組みは、企業ごとの業務・システム環境に合わせて検討します。</p>
+        </figure>
+
+        <div class="p-ai__points">
+          <h3 class="p-ai__points-title">設計で重視すること</h3>
+          <ul class="p-ai__points-list">
+            <li><span class="p-ai__points-name">出力品質</span>AIの出力を確認する観点と基準を決め、品質を保てる仕組みにする</li>
+            <li><span class="p-ai__points-name">人による承認</span>どこで誰が承認するかを業務ごとに決め、最終判断は人が行う</li>
+            <li><span class="p-ai__points-name">例外処理</span>想定外の入力や差異があったときの止め方・戻し方を先に設計する</li>
+            <li><span class="p-ai__points-name">セキュリティ</span>扱うデータの範囲、アクセス権限、記録の残し方を貴社の方針に合わせる</li>
+            <li><span class="p-ai__points-name">既存システム連携</span>現在のシステムとどうつなげられるか、実現性を見極めて構成を考える</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="l-section p-strengths" id="strengths" aria-labelledby="strengths-title">
+      <div class="l-container l-container--base p-strengths__inner">
+        <header class="c-section-heading c-section-heading--left p-strengths__heading">
+          <p class="c-eyebrow" lang="en">STRENGTHS</p>
+          <h2 class="c-section-heading__title" id="strengths-title">TAGI Consulting<br>の強み</h2>
+          <p class="c-section-heading__lead">ツールや手法ありきではなく、業務そのものから考える。それがTAGIの出発点です。</p>
+        </header>
+        <ol class="p-strengths__list">
+          <li class="p-strengths__item">
+            <span class="c-number">01</span>
+            <div>
+              <h3 class="p-strengths__title">業務全体から考える</h3>
+              <p>部分的なIT化ではなく、受発注から請求までの業務のつながり全体を見て、変えるべき箇所と順番を決めます。</p>
+            </div>
+          </li>
+          <li class="p-strengths__item">
+            <span class="c-number">02</span>
+            <div>
+              <h3 class="p-strengths__title">業務とITの両方の言葉で話せる</h3>
+              <p>現場の業務の実態と、システムでできること・できないことの両面から課題を整理し、実行できる改善策に落とし込みます。</p>
+            </div>
+          </li>
+          <li class="p-strengths__item">
+            <span class="c-number">03</span>
+            <div>
+              <h3 class="p-strengths__title">AIを「使い続けられる仕組み」にする</h3>
+              <p>AIを試して終わりにせず、承認・例外処理・セキュリティまで含めて業務に組み込み、日々の運用で回る形にします。</p>
+            </div>
+          </li>
+          <li class="p-strengths__item">
+            <span class="c-number">04</span>
+            <div>
+              <h3 class="p-strengths__title">代表が構想から定着まで伴走する</h3>
+              <p>ご相談をお受けした代表が、計画づくりから実行・定着まで直接担当します。関係者を巻き込みながら、改革を前に進めます。</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="l-section p-process u-bg-mist" id="process" aria-labelledby="process-title">
+      <div class="l-container l-container--wide">
+        <header class="c-section-heading">
+          <p class="c-eyebrow" lang="en">PROCESS</p>
+          <h2 class="c-section-heading__title" id="process-title">ご支援の進め方</h2>
+          <p class="c-section-heading__lead">いきなり大きな計画を立てるのではなく、現状を知ることから始めます。</p>
+        </header>
+        <ol class="p-process__list">
+          <li class="p-process__step">
+            <span class="p-process__no">01</span>
+            <h3 class="p-process__name">ご相談</h3>
+            <p>メールで、お困りのことや現在の状況をお知らせください。課題が整理できていなくても構いません。</p>
+          </li>
+          <li class="p-process__step">
+            <span class="p-process__no">02</span>
+            <h3 class="p-process__name">現状把握・課題整理</h3>
+            <p>業務の流れ、使っているシステム、関わる人を把握し、課題と優先順位を整理します。</p>
+          </li>
+          <li class="p-process__step">
+            <span class="p-process__no">03</span>
+            <h3 class="p-process__name">改革の構想・計画</h3>
+            <p>業務・システム・AI活用を含めたあるべき姿と、そこに至る計画・体制を設計します。</p>
+          </li>
+          <li class="p-process__step">
+            <span class="p-process__no">04</span>
+            <h3 class="p-process__name">実行・試行</h3>
+            <p>優先度の高い領域から実行します。AIエージェントは小さく試し、効果と課題を確かめます。</p>
+          </li>
+          <li class="p-process__step">
+            <span class="p-process__no">05</span>
+            <h3 class="p-process__name">定着・改善</h3>
+            <p>運用ルールや役割分担を整え、現場に定着させます。結果を踏まえて、対象業務を広げます。</p>
+          </li>
+        </ol>
+        <p class="p-process__note">料金は、ご相談内容と支援範囲に応じた<strong>個別見積もり</strong>です。</p>
+      </div>
+    </section>
+
+    <section class="l-section p-profile" id="profile" aria-labelledby="profile-title">
+      <div class="l-container l-container--base">
+        <header class="c-section-heading">
+          <p class="c-eyebrow" lang="en">PROFILE</p>
+          <h2 class="c-section-heading__title" id="profile-title">代表プロフィール</h2>
+        </header>
+
+        <div class="p-profile__main">
+          <div class="p-profile__emblem" aria-hidden="true">
+            <svg viewBox="0 0 320 400" preserveAspectRatio="xMidYMid slice">
+              <use href="#logo-mark" x="44" y="72" width="168" height="54" style="color:#132C4C"/>
+              <line x1="60" y1="400" x2="320" y2="90" stroke="#132C4C" stroke-width="1.5"/>
+              <polygon points="250,190 290,190 196,302 156,302" fill="#2A4258"/>
+              <line x1="150" y1="400" x2="320" y2="197" stroke="#A9ADC0" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="p-profile__body">
+            <p class="p-profile__role">TAGI Consulting 代表</p>
+            <p class="p-profile__name" lang="en">a.kato</p>
+            <p class="p-profile__exp"><span>コンサルティング経験</span><strong>6年</strong></p>
+            <div class="p-profile__text">
+              <p>業務改革・IT導入領域を中心に、約6年間のコンサルティング経験を持つ。</p>
+              <p>業務プロセスの可視化・分析、業務標準化、To-Be業務設計、システム導入、運用体制構築、プロジェクトマネジメントなど、業務改革の構想から実行・定着まで幅広く経験。</p>
+              <p>近年は生成AIの業務活用や、AIを用いた業務効率化にも取り組む。</p>
+              <p>業務とITの双方の視点から課題を整理し、現場の実態に即した改善策の具体化と、関係者を巻き込んだ改革推進を強みとする。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-profile__details">
+          <div class="p-profile__block">
+            <h3 class="p-profile__block-title">専門スキル</h3>
+            <ul class="p-profile__skills">
+              <li>BPR・業務改善</li>
+              <li>As-Is／To-Be業務分析・設計</li>
+              <li>業務プロセス標準化</li>
+              <li>業務・システム要件定義</li>
+              <li>ERP・IT導入支援</li>
+              <li>業務運用設計・運用体制構築</li>
+              <li>PMO・PGMO</li>
+              <li>生成AI活用・業務効率化支援</li>
+            </ul>
+          </div>
+          <div class="p-profile__block">
+            <h3 class="p-profile__block-title">保有資格</h3>
+            <ul class="p-profile__certs">
+              <li lang="en">Project Management Professional（PMP）</li>
+              <li>基本情報技術者</li>
+              <li lang="en">AWS Certified Cloud Practitioner</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="p-profile__approach">
+          <h3 class="p-profile__block-title">問題解決の進め方</h3>
+          <ol class="p-profile__approach-list">
+            <li><span class="c-number">01</span><strong>現場の実態を知る</strong><p>資料だけで判断せず、業務の流れと担当者の困りごとを把握します。</p></li>
+            <li><span class="c-number">02</span><strong>業務とITの両面で整理する</strong><p>業務のルールとシステムの制約を並べ、実現できる改善策に具体化します。</p></li>
+            <li><span class="c-number">03</span><strong>関係者を巻き込み、定着させる</strong><p>部門の立場の違いを調整しながら進め、運用が回る状態まで見届けます。</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="l-section p-faq" id="faq" aria-labelledby="faq-title">
+      <div class="l-container l-container--narrow">
+        <header class="c-section-heading">
+          <p class="c-eyebrow" lang="en">FAQ</p>
+          <h2 class="c-section-heading__title" id="faq-title">よくあるご質問</h2>
+        </header>
+        <div class="p-faq__list">
+          <details class="c-accordion" open>
+            <summary class="c-accordion__q">費用はどのくらいかかりますか。</summary>
+            <div class="c-accordion__a"><p>個別見積もりです。ご相談内容、支援範囲、期間をお伺いしたうえで、お見積もりをご提示します。</p></div>
+          </details>
+          <details class="c-accordion">
+            <summary class="c-accordion__q">課題がまだ整理できていない段階でも相談できますか。</summary>
+            <div class="c-accordion__a"><p>はい、ご相談いただけます。現在の業務の進め方や、お困りの点をお聞きするところから一緒に整理します。</p></div>
+          </details>
+          <details class="c-accordion">
+            <summary class="c-accordion__q">AIエージェントの活用には、どのような環境が必要ですか。</summary>
+            <div class="c-accordion__a"><p>特定のツールを前提とせず、現在お使いのシステム、データの状態、セキュリティ方針を確認したうえで、実現可能な範囲と進め方を検討します。</p></div>
+          </details>
+          <details class="c-accordion">
+            <summary class="c-accordion__q">AIに業務を任せて、品質や情報管理は大丈夫ですか。</summary>
+            <div class="c-accordion__a"><p>AIの出力をそのまま使うのではなく、人が確認・承認する工程や、例外時の対応ルールを業務に組み込んで設計します。扱うデータの範囲やアクセス権限も、貴社の方針に沿って検討します。</p></div>
+          </details>
+          <details class="c-accordion">
+            <summary class="c-accordion__q">どのような業種・業務に対応していますか。</summary>
+            <div class="c-accordion__a"><p>製造業・専門商社を中心に、受発注、購買、在庫、出荷、請求などの業務や、それらに関わるシステム導入・運用の見直しを主な対象としています。</p></div>
+          </details>
+          <details class="c-accordion">
+            <summary class="c-accordion__q">個人のコンサルタントに依頼する場合、どのような体制になりますか。</summary>
+            <div class="c-accordion__a"><p>TAGI Consultingは個人で運営しており、代表が直接ご支援を担当します。支援範囲や進め方は、ご相談内容に合わせて事前にすり合わせます。</p></div>
+          </details>
+          <details class="c-accordion">
+            <summary class="c-accordion__q">相談内容の秘密は守られますか。</summary>
+            <div class="c-accordion__a"><p>ご相談内容を第三者に開示することはありません。必要に応じて、秘密保持契約を締結したうえで詳細をお伺いします。</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="l-section p-contact" id="contact" aria-labelledby="contact-title">
+      <div class="p-contact__motif" aria-hidden="true"></div>
+      <div class="l-container l-container--base p-contact__inner">
+        <header class="c-section-heading c-section-heading--inverse">
+          <p class="c-eyebrow" lang="en">CONTACT</p>
+          <h2 class="c-section-heading__title" id="contact-title">お問い合わせ</h2>
+          <p class="c-section-heading__lead">課題がまだ整理できていなくても、構いません。<br class="u-pc">現在の状況をお聞きするところから始めます。</p>
+        </header>
+
+        <div class="p-contact__card">
+          <div class="p-contact__guide">
+            <h3 class="p-contact__guide-title">メールに記載いただきたいこと</h3>
+            <ul class="c-check-list">
+              <li>会社名・お名前</li>
+              <li>業種・おおよその事業規模</li>
+              <li>ご相談の内容（分かる範囲で構いません）</li>
+            </ul>
+            <p class="p-contact__price">料金：<strong>個別見積もり</strong></p>
+          </div>
+          <div class="p-contact__action">
+            <a class="c-button c-button--primary c-button--large" href="mailto:a.kato0001@tagi-consulting.jp?subject=%E3%80%90%E3%81%94%E7%9B%B8%E8%AB%87%E3%80%91TAGI%20Consulting%20Web%E3%82%B5%E3%82%A4%E3%83%88%E3%82%88%E3%82%8A&amp;body=%E4%BC%9A%E7%A4%BE%E5%90%8D%EF%BC%9A%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A%E6%A5%AD%E7%A8%AE%E3%83%BB%E4%BA%8B%E6%A5%AD%E8%A6%8F%E6%A8%A1%EF%BC%9A%0A%E3%81%94%E7%9B%B8%E8%AB%87%E5%86%85%E5%AE%B9%EF%BC%9A%0A"><svg class="c-button__icon c-button__icon--lead" aria-hidden="true"><use href="#i-mail"/></svg>メールで相談する</a>
+            <p class="p-contact__address">
+              <span class="p-contact__address-label">メールアドレス</span>
+              <span class="p-contact__address-value" id="contact-email">a.kato0001@tagi-consulting.jp</span>
+            </p>
+            <button class="c-button c-button--ghost c-button--small" type="button" data-copy-target="contact-email">アドレスをコピー</button>
+            <p class="p-contact__copy-status" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="l-footer">
+    <div class="l-container l-container--wide l-footer__inner">
+      <div class="l-footer__brand">
+        <a class="c-logo c-logo--inverse" href="#top" aria-label="TAGI Consulting トップへ">
+          <svg class="c-logo__mark" aria-hidden="true" focusable="false"><use href="#logo-mark"/></svg>
+          <span class="c-logo__sub" lang="en">Consulting</span>
+        </a>
+        <p class="l-footer__tagline">業務のつながりから、<br>企業の生産性を変える。</p>
+      </div>
+      <nav class="l-footer__nav" aria-label="フッターメニュー">
+        <ul>
+          <li><a href="#issues">業務課題</a></li>
+          <li><a href="#services">サービス</a></li>
+          <li><a href="#ai">AI活用</a></li>
+          <li><a href="#strengths">強み</a></li>
+          <li><a href="#process">進め方</a></li>
+          <li><a href="#profile">プロフィール</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <div class="l-footer__info">
+        <p class="l-footer__info-label">Contact</p>
+        <a href="mailto:a.kato0001@tagi-consulting.jp">a.kato0001@tagi-consulting.jp</a>
+      </div>
+    </div>
+    <p class="l-footer__copy"><small>&copy; 2026 TAGI Consulting</small></p>
+  </footer>
+
+  <a class="c-fixed-cta" href="#contact" aria-hidden="true" tabindex="-1">
+    <svg aria-hidden="true"><use href="#i-mail"/></svg>相談してみる
+  </a>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
