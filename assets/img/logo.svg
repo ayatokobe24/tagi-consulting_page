@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 128" role="img" aria-labelledby="t">
+  <title id="t">TAGI Consulting</title>
+  <defs>
+    <linearGradient id="a" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A4258"/>
+      <stop offset="1" stop-color="#C6CCD6"/>
+    </linearGradient>
+  </defs>
+  <g fill="#132C4C">
+    <path d="M0 0h64v12H0zM25 0h14v92H25z"/>
+    <path d="M104 0h13L85 92H72z" fill="url(#a)"/>
+    <path d="M104 0h13l33 92h-14z"/>
+    <path d="M228 18.5A39 39 0 1 0 239 52v-5h-27" fill="none" stroke="#132C4C" stroke-width="12"/>
+    <path d="M272 0h13v92h-13z"/>
+    <text x="145" y="124" font-family="'Cormorant Garamond','Times New Roman',serif" font-size="26" letter-spacing="11" text-anchor="middle">Consulting</text>
+  </g>
+</svg>
